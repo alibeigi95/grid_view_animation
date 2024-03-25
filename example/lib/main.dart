@@ -9,11 +9,8 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) => MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MainPage());
+  Widget build(BuildContext context) => const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Grid View Animation',
+      home: MainPage());
 }
